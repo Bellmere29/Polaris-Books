@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaris Books</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</l1>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação de Coachs</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Coachs Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Coachs de Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Coachs em Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Coachs de Design & UX</a>
+                </li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da Blusa">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Polaris</b>Books</h1>
+        </div>
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Coachs</li>
+
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação de Coachs</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Coachs Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Coachs de Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Coachs em Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Coachs de Design & UX</a>
+                </li>
+            </ul>
+            <li class="opções__item"><a href="#" class="opções__link">Coachs Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Meus coachs</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Favoritos da Blusa"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Compras da Blusa" class="container__imagem">
+                <p class="container__texto">Sacola da Blusa</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Usuário da Blusa" class="container__imagem">
+                <p class="container__texto">Perfil da Blusa</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe qual coach da Blusa vai levar?</h2>
+        <p class="banner__texto"> Encontre na nossa estante o seu próximo Coach by iBlusa</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será seu próximo Coach?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos Coachs</h2>
+
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro da blusa"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt="livro da irmã da Blusa"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro do Irmão da Blusa"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro da Blusa 2"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro da mão da Blusa"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro da namorada da Blusa"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+        </div>
+        
+        <div class="card">
+            <div class="card__descrição">
+                <div class="descriçao">
+                    <h3 class="descrição__titulo">Talvez esses coachs te interessem</h3>
+                    <h2 class="descrição__titulo-livro">Como ser a Melhor Zarya do S.A</h2>
+                    <p class="descrição__texto">Construindo sua reputação no S.A. de Zarya</p>
+                </div>
+                <img src="img/Angular.svg" class="descrição__imagem">
+            </div>
+            <div class="card__botões">
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="favoritos da blusa"></li>
+                    <li class="botões__item"><img src="img/Compras.svg" alt="compras da blusa"></li>
+
+                </ul>
+                <a href="#" class="botões__ancora">Saiba Mais</a>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Coachs mais vendidos</h2>
+
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro da blusa"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt="livro da irmã da Blusa"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro do Irmão da Blusa"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro da Blusa 2"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro da mão da Blusa"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro da namorada da Blusa"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+        </div>
+
+        <div class="card">
+            <div class="card__descrição">
+                <div class="descriçao">
+                    <img src="img/Estrelinhas.svg">
+                    <h3 class="descrição__titulo">Autora do Mês</h3>
+                    <h2 class="descrição__titulo-livro">Camile Borges (iBlusa)</h2>
+                    <p class="descrição__texto">Blusa não fala, ela ensina. Formou o proprio professor do ensino
+                        fundamental e desde então vem formando os jovens do mundo</p>
+                </div>
+                <img src="img/blusa.png" class="descrição__imagem">
+            </div>
+            <div class="card__botões">
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="favoritos da blusa"></li>
+                    <li class="botões__item"><img src="img/Compras.svg" alt="compras da blusa"></li>
+
+                </ul>
+                <a href="#" class="botões__ancora">Saiba Mais</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="topicos__titulo">COACHS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item"> <a href="#" class="topicos__link">Coach de Android</a></li>
+            <li class="topicos__item"> <a href="#" class="topicos__link">Coach de Marketing</a></li>
+            <li class="topicos__item"> <a href="#" class="topicos__link">Coach de Agile</a></li>
+            <li class="topicos__item"> <a href="#" class="topicos__link">Coach de Startups</a></li>
+            <li class="topicos__item"> <a href="#" class="topicos__link">Coach de Zarya</a></li>
+            <li class="topicos__item"> <a href="#" class="topicos__link">Coach de Ana</a></li>
+            <li class="topicos__item"> <a href="#" class="topicos__link">Coach de HTML & CSS</a></li>
+            <li class="topicos__item"> <a href="#" class="topicos__link">Coach de Java</a></li>
+            </ult>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+        <h2 class="contato__titulo">Fique por dentro dos Coachs</h2>
+        <p class="contato__texto">Atualizações de Coachs, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+
+    </section>
+
+    <hr />
+
+    <footer class="rodape">
+
+        <h2 class="rodape__titulo">Grupo Polaris</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação</li>
+            <li class="lista-rodapé__item">
+                <img src="img/CasaDoCodigo.svg" alt="logo da Casa blusa">
+                <a href="#" class="lista-rodapé__link">Casa da Blusa</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Caelum.svg" alt="logo da blusa">
+                <a href="#" class="lista-rodapé__link">Blusa</a>
+            </li>
+
+        </ul>
+ 
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação da Blusa</li>
+            <li class="lista-rodapé__item">
+                <img src="img/Alura.svg" alt="logo da blusa">
+                <a href="#" class="lista-rodapé__link">A Blusa</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraEmpresas.svg" alt="logo da blusa">
+                <a href="#" class="lista-rodapé__link">A Blusa para Empresas</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <img src="img/AluraLATAM.svg" alt="logo da blusa">
+                    <a href="#" class="lista-rodapé__link">Blusa LATAM</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <img src="img/AluraStart.svg" alt="logo da blusa">
+                    <a href="#" class="lista-rodapé__link">Start da Blusa</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <img src="img/MusicDot.svg" alt="logo da blusa">
+                    <a href="#" class="lista-rodapé__link">Música da Blusa</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <img src="img/AluraLingua.svg" alt="logo da blusa">
+                    <a href="#" class="lista-rodapé__link">Lingua da Blusa</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <img src="img/PM3.svg" alt="logo da blusa">
+                    <a href="#" class="lista-rodapé__link">PM3 da Blusa</a>
+                </li>
+
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Comunidade da Blusa</li>
+            <li class="lista-rodapé__item">
+                <img src="img/HipstersTech.svg" alt="logo da blusa">
+                <a href="#" class="lista-rodapé__link">Blusa Tech</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/ScubaDev.svg" alt="logo da blusa">
+                <a href="#" class="lista-rodapé__link">Scuba Dev Blusa</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/LayersTech.svg" alt="logo da blusa">
+                <a href="#" class="lista-rodapé__link">Layers da Blusa</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/LikeABoss.svg" alt="logo da blusa">
+                <a href="#" class="lista-rodapé__link">Blusa Final Boss</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/CarreiraSemFronteira.svg" alt="logo da blusa">
+                <a href="#" class="lista-rodapé__link">Blusa's Carreiras</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/HipstersJobs.svg" alt="logo da blusa">
+                <a href="#" class="lista-rodapé__link">Blusa Hipsters</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/GUJ.svg" alt="logo da blusa">
+                <a href="#" class="lista-rodapé__link">GUJ da Blusa</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+
+
+    </div>
+</body>
+
+</html>
